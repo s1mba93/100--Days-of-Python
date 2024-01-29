@@ -44,9 +44,10 @@ else:
   print(player_choice)
   print(f"\nComputer chose:\n{cpu_choice}")
 
-#If Statements for Player picking rock
-if player_choice == options[0] and cpu_choice == options[0]:
+#Check if game is a draw.
+if player_choice == cpu_choice:
   print("Its a Draw")
+#If Statements for Player picking rock
 elif player_choice == options[0] and cpu_choice == options[1]:
   print("You Lose")
 elif player_choice == options[0] and cpu_choice == options[2]:
@@ -54,8 +55,6 @@ elif player_choice == options[0] and cpu_choice == options[2]:
 #If Statements for Player picking paper
 elif player_choice == options[1] and cpu_choice == options[0]:
   print("You Win!")
-elif player_choice == options[1] and cpu_choice == options[1]:
-  print("Its a Draw")
 elif player_choice == options[1] and cpu_choice == options[2]:
   print("You Lose")
 #If Statements for Player picking scissorsS
@@ -63,8 +62,7 @@ elif player_choice == options[2] and cpu_choice == options[0]:
   print("You Lose")
 elif player_choice == options[2] and cpu_choice == options[1]:
   print("You Win!")
-elif player_choice == options[2] and cpu_choice == options[2]:
-  print("Its a Draw")
+
 
 
 
