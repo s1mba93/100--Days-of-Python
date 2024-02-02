@@ -1,3 +1,4 @@
+#Made using none of the lesson hints
 from art import logo
 import random
 
